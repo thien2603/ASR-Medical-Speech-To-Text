@@ -1,0 +1,11 @@
+{
+  "dataset": "leduckhai/VietMed",
+  "split": "test",
+  "samples": 3437,
+  "audio_seconds": 21680.0,
+  "manifest_sha256": "3dc93005897f70577cb7af12f85ce23402dfff1346a59726935037c3f6f716de",
+  "reference_sha256": "0882a921c4afb6bac3cdd4063664c42019ac0bddcf328498b53205f359d3498a",
+  "source": "/kaggle/input/datasets/lqucng/vietmed-dataset/test.parquet",
+  "audio_preprocessing": "original parquet; scipy resample_poly; shared PCM16 mono 16kHz",
+  "normalization": "NFC + lowercase + punctuation/symbols to space + whitespace collapse; keep digits/diacritics"
+}

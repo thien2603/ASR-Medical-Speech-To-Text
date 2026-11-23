@@ -1,0 +1,16 @@
+{
+  "id": "k63ftutrnththonguyn/vietmed-fastconformer-decoding-fix",
+  "title": "VietMed FastConformer Decoding Fix",
+  "code_file": "decoding_fix.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "true",
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": [
+    "k63ftutrnththonguyn/vietmed-fastconformer-continued-fine-tune"
+  ],
+  "model_sources": []
+}

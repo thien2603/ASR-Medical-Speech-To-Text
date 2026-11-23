@@ -1,0 +1,20 @@
+{
+  "benchmark_date_local": "2026-11-19",
+  "timezone": "Asia/Saigon",
+  "kaggle_notebook": "https://www.kaggle.com/code/k63ftutrnththonguyn/vietmed-three-model-benchmark",
+  "privacy": "private",
+  "kernel_versions": {
+    "kyle": 4,
+    "phowhisper": 2,
+    "whisper": 2,
+    "whisper_implementation_diagnostic": 4
+  },
+  "gpu_type": "Tesla T4",
+  "precision": "float16",
+  "batch_size": 4,
+  "note": "Separate Kaggle sessions after environment fixes. Identical manifest, audio hashes, normalized references, and model revisions verified before merging. No test-driven decoding changes were made.",
+  "historical_adaptive_finetuned_kyle": {
+    "included_in_main_comparison": false,
+    "reason": "Different fine-tuned weights and decoder configuration selected using failing test probes. Reported 26.91% WER is a two-pass adaptive diagnostic result."
+  }
+}

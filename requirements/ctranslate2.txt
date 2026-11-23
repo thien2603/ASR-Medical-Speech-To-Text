@@ -1,0 +1,5 @@
+-r evaluation.txt
+faster-whisper==1.2.1
+ctranslate2==4.9.0
+av==17.1.0
+flatbuffers==25.12.19

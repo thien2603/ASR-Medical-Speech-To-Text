@@ -1,0 +1,29 @@
+{
+  "status": "verified_against_stated_reference",
+  "audio_seconds": 354.266875,
+  "segments": 17,
+  "reference_words": 1277,
+  "reference_status": "ASR-assisted editorial draft; no direct listening by agent; age/wording ambiguities pending listener confirmation; not manually verified gold",
+  "reference_sha256": "c0c550610a865b62ba1ed6d074c8f6cdcfb65313a6c46903820f224dafb9d1dd",
+  "candidate_predictions_used_to_edit_reference": false,
+  "models": [
+    {
+      "model": "kyle/vi-asr-fastconformer-114m",
+      "wer_percent": 18.089271730618638,
+      "cer_percent": 12.33644859813084,
+      "inference_seconds": 1.2693352719999211,
+      "rtf": 0.0035829916979958146,
+      "initial_subtitle_wer_percent": 18.28125,
+      "initial_subtitle_cer_percent": 12.479015109121432
+    },
+    {
+      "model": "vinai/PhoWhisper-large",
+      "wer_percent": 10.258418167580267,
+      "cer_percent": 7.084112149532711,
+      "inference_seconds": 22.957300303000068,
+      "rtf": 0.06480227738763344,
+      "initial_subtitle_wer_percent": 10.46875,
+      "initial_subtitle_cer_percent": 7.2001492258906925
+    }
+  ]
+}

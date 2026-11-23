@@ -1,0 +1,6 @@
+numpy>=1.24,<2.1
+soundfile>=0.12
+datasets[audio]>=2.19,<4
+jiwer>=3.0,<4
+huggingface_hub>=0.24
+nemo_toolkit[asr]>=2.0,<3

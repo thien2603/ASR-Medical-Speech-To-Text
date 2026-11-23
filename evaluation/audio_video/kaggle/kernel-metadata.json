@@ -1,0 +1,14 @@
+{
+  "id": "k63ftutrnththonguyn/medical-podcast-two-model-evaluation",
+  "title": "Medical Podcast Two Model Evaluation",
+  "code_file": "evaluate.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": ["k63ftutrnththonguyn/medical-podcast-asr-eval-input"],
+  "kernel_sources": ["k63ftutrnththonguyn/vietmed-fastconformer-continued-fine-tune"],
+  "competition_sources": [],
+  "model_sources": []
+}

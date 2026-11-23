@@ -1,0 +1,14 @@
+{
+  "id": "k63ftutrnththonguyn/kaggle-asr-runtime-diagnostic",
+  "title": "Kaggle ASR Runtime Diagnostic",
+  "code_file": "kaggle_runtime_diagnostic.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "true",
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

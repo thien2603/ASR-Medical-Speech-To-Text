@@ -1,0 +1,54 @@
+{
+  "status": "verified",
+  "samples_per_model": 3437,
+  "gpu": "Tesla T4",
+  "models": [
+    {
+      "model": "kyle/vi-asr-fastconformer-114m",
+      "status": "complete",
+      "samples": 3437,
+      "wer_percent": 26.18797446741443,
+      "cer_percent": 20.440857474936447,
+      "rtf": 0.0036288306006457627,
+      "inference_seconds": 78.67304742200014,
+      "gpu_peak_allocated_gib": 0.6763753890991211,
+      "backend": "NeMo",
+      "precision": "float16",
+      "batch_size": 4
+    },
+    {
+      "model": "vinai/PhoWhisper-large",
+      "status": "complete",
+      "samples": 3437,
+      "wer_percent": 24.139063279833987,
+      "cer_percent": 20.24072197947679,
+      "rtf": 0.08388030209810893,
+      "inference_seconds": 1818.5249494870015,
+      "gpu_peak_allocated_gib": 3.980609893798828,
+      "backend": "Transformers SDPA",
+      "precision": "float16",
+      "batch_size": 4
+    },
+    {
+      "model": "openai/whisper-large-v3",
+      "status": "complete",
+      "samples": 3437,
+      "wer_percent": 74.30192545115449,
+      "cer_percent": 58.82958027484446,
+      "rtf": 0.0714031348614395,
+      "inference_seconds": 1548.0199637960081,
+      "gpu_peak_allocated_gib": 4.096568584442139,
+      "backend": "Transformers SDPA",
+      "precision": "float16",
+      "batch_size": 4
+    }
+  ],
+  "whisper_implementation_check": {
+    "matched_samples": 3,
+    "methods": [
+      "full-run SDPA batch=4",
+      "direct eager batch=1",
+      "official pipeline eager batch=1"
+    ]
+  }
+}

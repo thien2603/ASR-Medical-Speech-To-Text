@@ -1,0 +1,57 @@
+{
+  "dataset": {
+    "dataset": "leduckhai/VietMed",
+    "split": "test",
+    "samples": 3437,
+    "audio_seconds": 21680.0,
+    "manifest_sha256": "3dc93005897f70577cb7af12f85ce23402dfff1346a59726935037c3f6f716de",
+    "reference_sha256": "0882a921c4afb6bac3cdd4063664c42019ac0bddcf328498b53205f359d3498a",
+    "source": "/kaggle/input/datasets/lqucng/vietmed-dataset/test.parquet",
+    "audio_preprocessing": "original parquet; scipy resample_poly; shared PCM16 mono 16kHz",
+    "normalization": "NFC + lowercase + punctuation/symbols to space + whitespace collapse; keep digits/diacritics"
+  },
+  "gpu": "Tesla T4",
+  "models": [
+    {
+      "model": "kyle/vi-asr-fastconformer-114m",
+      "status": "complete",
+      "samples": 3437,
+      "wer_percent": 26.18797446741443,
+      "cer_percent": 20.440857474936447,
+      "rtf": 0.0036288306006457627,
+      "inference_seconds": 78.67304742200014,
+      "gpu_peak_allocated_gib": 0.6763753890991211,
+      "backend": "NeMo",
+      "precision": "float16",
+      "batch_size": 4
+    },
+    {
+      "model": "vinai/PhoWhisper-large",
+      "status": "complete",
+      "samples": 3437,
+      "wer_percent": 24.139063279833987,
+      "cer_percent": 20.24072197947679,
+      "rtf": 0.08388030209810893,
+      "inference_seconds": 1818.5249494870015,
+      "gpu_peak_allocated_gib": 3.980609893798828,
+      "backend": "Transformers SDPA",
+      "precision": "float16",
+      "batch_size": 4
+    },
+    {
+      "model": "openai/whisper-large-v3",
+      "status": "complete",
+      "samples": 3437,
+      "wer_percent": 74.30192545115449,
+      "cer_percent": 58.82958027484446,
+      "rtf": 0.0714031348614395,
+      "inference_seconds": 1548.0199637960081,
+      "gpu_peak_allocated_gib": 4.096568584442139,
+      "backend": "Transformers SDPA",
+      "precision": "float16",
+      "batch_size": 4
+    }
+  ],
+  "source": "Private Kaggle benchmark; Whisper runs version 2, Kyle environment repair run; all runs verified against identical audio hashes/references",
+  "note": "Same GPU type/FP16/batch=4, separate Kaggle sessions after environment repair; no test-driven decoding changes"
+}
